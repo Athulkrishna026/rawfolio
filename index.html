@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div id="container" class="container">
+    <!-- header -->
+    <header>
+      <nav>
+        <img class="logo" src="./images/logo.png" alt="logo">
+        <ul class="fo">
+          <li class="list-items"><a class="links" href="#home">Home</a></li>
+          <li class="list-items"><a class="links" href="#about">About</a></li>
+          <li class="list-items"><a class="links" href="#skill">Skills</a></li>
+          <li class="list-items"><a class="links" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- home -->
+    <section id="home">
+      <div class="home-content">
+        <h1 class="animate__animated animate__backInLeft " id="sal">Hi I'm <span id="lname">Athulkrishna P Shijo</span>
+        </h1>
+        <h2 class="full">A Full Stack Developer</h2>
+        <p id="user-details">
+          Passionate about developing robust web solutions with a <br> strong focus on performance and user experience.
+        </p>
+        <a id="download" href="./images/aa.pdf" download="">VIEW CV</a>
+      </div>
+      <div class="home-img" data-aos="fade-left">
+        <img class="group1" src="./images/me.png" alt="mee" id="girl">
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+      <div class="sectionhead">
+        <h2 class="mainHead">About Me</h2><br>
+      </div>
+      <div class="aboutBody">
+        <div class="aboutImg" data-aos="fade-right">
+          <img class="img1" src="./images/me1.jpg" alt="About Image" />
+        </div>
+        <div class="information">
+          <p>
+            I'm a passionate full-stack developer with a strong interest in building scalable web applications and
+            intuitive user interfaces. I enjoy solving real-world problems through clean, efficient code and staying
+            updated with the latest technologies. My goal is to create impactful digital experiences that are both
+            functional and user-friendly.
+          </p>
+          <div class="inforBox">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91-9847925183</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skill">
+      <div class="sectionhead">
+        <h2 class="mainHead">Skills</h2><br><br>
+      </div>
+      <div class="skills-container">
+        <div class="skill-box">
+          <h3 class="lhead">Frontend</h3>
+          <ul>
+            <li class="list-item">HTML5</li>
+            <li class="list-item">CSS3</li>
+            <li class="list-item">JavaScript</li>
+            <li class="list-item">React.js</li>
+            <li class="list-item">Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3 class="lhead">Backend</h3>
+          <ul>
+            <li class="list-item">Node.js</li>
+            <li class="list-item">Express.js</li>
+            <li class="list-item">Django</li>
+            <li class="list-item">Flask</li>
+            <li class="list-item">REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3 class="lhead">Tools & DB</h3>
+          <ul>
+            <li class="list-item">Git & GitHub</li>
+            <li class="list-item">MySQL</li>
+            <li class="list-item">MongoDB</li>
+            <li class="list-item">Postman</li>
+            <li class="list-item">Docker</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="sectionhead">
+        <h2 class="mainHead">Contact</h2>
+      </div>
+      <div class="iconCollection">
+        <div class="icon">
+          <a href="https://www.linkedin.com/in/athuls026" target="_blank"><i class="fa-brands fa-linkedin brands"></i></a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/Athulkrishna026" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+        </div>
+        <div class="icon">
+          <a href="athuls026@gmail.com" target="_blank"><i class="fa-solid fa-inbox brands"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <p id="copyright">
+        &copy; Athulkrishna P Shijo Portfolio - June 2024, &reg; All Rights Reserved
+      </p>
+      <div class="icon upArrow">
+        <a href="#container"><i class="fa-solid fa-angle-up brands"></i></a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

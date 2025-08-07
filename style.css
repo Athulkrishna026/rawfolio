@@ -1,0 +1,248 @@
+body {
+  background-color: darkslategray;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.list-items {
+  list-style: none;
+  display: inline;
+  margin: 0 20px;
+}
+
+.links {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  position: relative;
+}
+
+
+
+.links:hover {
+  color: aqua;
+}
+
+.home-content {
+  margin-left: 80px;
+  padding-top: 100px;
+}
+
+#sal {
+  font-family: Cambria, serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.full,
+#lname {
+  color: aqua;
+}
+
+#user-details {
+  line-height: 1.5;
+}
+
+#download {
+  text-decoration: none;
+  color: white;
+  background-color: cyan;
+  padding: 6px 12px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.home-img {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  right: 200px;
+  bottom: 120px;
+}
+
+.group1 {
+  position: absolute;
+  height: 300%;
+  bottom: 0;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: bottom 2s, left 1s;
+}
+
+#home {
+  height: 500px;
+  position: relative;
+}
+
+#about {
+  margin: 5% 0 0 8%;
+  height: 350px;
+}
+
+.sectionhead .mainHead {
+  text-align: center;
+  color: aqua;
+}
+
+.aboutBody {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.img1 {
+  width: 35%;
+  border-radius: 40%;
+  border: solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: 200px;
+}
+
+.information {
+  margin-right: 100px;
+}
+
+.inforBox{
+    padding-top: 10px;
+}
+#skill {
+  margin: 5% 30px 0 30px;
+  padding: 60px 20px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: grey;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.skill-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+}
+
+.iconCollection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.brands {
+  color: aqua;
+  font-size: 25px;
+}
+
+.icon:hover .brands {
+  color: white;
+  animation: rotate 3s;
+}
+
+@keyframes rotate {
+  0%, 100% { transform: rotate(-30deg); }
+  40%, 80% { transform: rotate(30deg); }
+  20%, 60% { transform: rotate(-30deg); }
+}
+
+footer {
+  margin-top: 8%;
+  text-align: center;
+}
+
+.upArrow {
+  float: right;
+  margin: -40px 20px 20px 0;
+}
+
+.lhead{
+    color: aqua;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 768px) {
+  .aboutBody {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home-img {
+    display: none;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img1 {
+    margin-left: 0;
+    width: 60%;
+  }
+
+  .information {
+    margin: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
